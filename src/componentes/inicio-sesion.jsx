@@ -16,7 +16,9 @@ const Inicio = () => {
   const InputPassword = (event) => {
     setPasswor(event.target.value);
   };
+//----------------------------------------
 
+//-----------------------------------
   const autite = async () => {
     let usuarioEncontrado = false;
     let api = await GETdata();
@@ -28,7 +30,6 @@ const Inicio = () => {
         localStorage.setItem('userID', e.id); 
       }
     });
-
     if (usuarioEncontrado) {
       alert("bueno");
       navigate('/home');
@@ -39,8 +40,11 @@ const Inicio = () => {
 
   return (
     <>
+    {/* EL NAV */}
       <nav id="conteinerNav">
         <div id="botones">
+
+          {/* LOS BOTONES DEL REGIS Y INICIAR SESION */}
           <Link to="/registrase">
             <a aria-label='Thanks' className='h-button centered' data-text='Registrarse' href='#'>
               <span>T</span>

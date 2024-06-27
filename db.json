@@ -1,10 +1,25 @@
 {
-    "users": [
-      {
-        "id": "9e43",
-        "usuario": "jordy",
-        "email": "yordy@ello",
-        "contraseña": "1234"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": "9e43",
+      "usuario": "jordy",
+      "email": "yordy@ello",
+      "contraseña": "1234"
+    },
+    {
+      "id": "5852",
+      "usuario": "jordy",
+      "email": "MAMA@ello",
+      "contraseña": "124"
+    }
+  ],
+  "admin" :[
+    {
+      "id" : "63gsi",
+      "usuario": "jordy",
+      "email": "yordymar224@gmail.com",
+      "contraseña": "jordy1234"
+    }
+  ]
+  
+}
