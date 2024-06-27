@@ -37,24 +37,27 @@ const Registrase = () => {
 
    
   return (
+<>
+    <nav>     <Link to="/Inicio">
+    <a aria-label='Thanks' className='h-button centered' data-text='Iniciar sesion' href='#'>
+      <span>T</span>
+      <span>O</span>
+      <span>C</span>
+      <span>A</span>
+      <span></span>
+      <span></span>
+      <span>A</span>
+      <span>Q</span>
+      <span>U</span>
+      <span>I</span>
+      <span>!</span>
+      </a>
+      </Link>
+      </nav>
     
     <div id="conteinerRegis">  
     <h1>REGISTRARSE</h1><br />
-       <Link to="/Inicio">
-      <a aria-label='Thanks' className='h-button centered' data-text='Iniciar sesion' href='#'>
-        <span>T</span>
-        <span>O</span>
-        <span>C</span>
-        <span>A</span>
-        <span></span>
-        <span></span>
-        <span>A</span>
-        <span>Q</span>
-        <span>U</span>
-        <span>I</span>
-        <span>!</span>
-        </a>
-        </Link>
+  
       <input id="inputUser" type="text" onChange={input1} value={inpunUser} placeholder="ingrese usuario" /><br />
 
       <input id="inputgmail" type="text" onChange={input2} value={inputGmail} placeholder="ingrese correo" /><br />
@@ -63,6 +66,7 @@ const Registrase = () => {
       <button id="BotonRegis" onClick={regis}>registrase</button>
       
     </div>
+  </>
   )
 }
 
