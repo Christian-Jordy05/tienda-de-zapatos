@@ -1,0 +1,42 @@
+#conteiner2 {
+    width: 170px;
+    margin-left: 40%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-rows: 78px 80px 60px;
+  }
+
+
+  #boton2 {
+    margin-left: 33px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: transparent;
+    height: 50px;
+    width: 140px;
+  }
+#titulo1{
+    margin-left: -40px;
+}
+
+#InputDeUsers2,
+#contra2 {
+  width: 200px;
+  height: 40px;
+}
+
+#botonesUserYAdmin{
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+    margin-top: -25%;
+    margin-left: 15%;
+    width: 200px;  
+    align-items: center;
+}
+#boton1{
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    
+}
