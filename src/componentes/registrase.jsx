@@ -38,21 +38,44 @@ const Registrase = () => {
    
   return (
 <>
-    <nav>     <Link to="/Inicio">
-    <a aria-label='Thanks' className='h-button centered' data-text='Iniciar sesion' href='#'>
-      <span>T</span>
-      <span>O</span>
-      <span>C</span>
-      <span>A</span>
-      <span></span>
-      <span></span>
-      <span>A</span>
-      <span>Q</span>
-      <span>U</span>
-      <span>I</span>
-      <span>!</span>
-      </a>
-      </Link>
+      {/* EL NAV */}
+      <nav id="conteinerNav">
+        <div id="botones">
+
+          {/* LOS BOTONES DEL REGIS Y INICIAR SESION */}
+          <Link to="/inicio">
+            <a aria-label='Thanks' className='h-button centered' data-text='Iniciar sesion' href='#'>
+              <span>T</span>
+              <span>O</span>
+              <span>C</span>
+              <span>A</span>
+              <span></span>
+              <span></span>
+              <span>A</span>
+              <span>Q</span>
+              <span>U</span>
+              <span>I</span>
+              <span>!</span>
+            </a>
+          </Link>
+          
+          <Link to="/Home">
+            <a aria-label='Thanks' className='L-button Centered' data-text='Home' href='#'>
+              <span>T</span>
+              <span>O</span>
+              <span>C</span>
+              <span>A</span>
+              <span></span>
+              <span></span>
+              <span>A</span>
+              <span>Q</span>
+              <span>U</span>
+              <span>I</span>
+              <span>!</span>
+            </a>
+          </Link>
+        </div>
+        <h1 id="titulo">BEARTRIX<span style={{ color: "blue" }}>15</span></h1>
       </nav>
     
     <div id="conteinerRegis">  
