@@ -1,12 +1,12 @@
 
 import { GETAdmin } from '../services/ApiDeadmin';
-import { UseState } from 'react';
-import { UseNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function sesionAdmin() {
-    const [Admingmail, setAdmin] = UseState();
-    const [AdminPass, setAdminPasswor] = UseState();
-    const navigate = UseNavigate();
+function SesionAdmin() {
+    const [Admingmail, setAdmin] = useState();
+    const [AdminPass, setAdminPasswor] = useState();
+    const navigate = useNavigate();
 
     const Input1 = (event) => {
         setAdmin(event.target.value);
@@ -42,4 +42,4 @@ function sesionAdmin() {
   )
 }
 
-export default sesionAdmin
+export default SesionAdmin

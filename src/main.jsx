@@ -6,6 +6,7 @@ import './css/Registrarse.css'
 import'./css/pagError.css'
 import './css/casa.css'
 import './css/sesionAdmin.css'
+import './css/Contacto.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
