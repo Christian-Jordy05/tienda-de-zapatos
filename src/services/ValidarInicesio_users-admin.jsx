@@ -5,15 +5,18 @@ import { Link } from 'react-router-dom';
 import Corona from '../img/corona.png'
 import user from  '../img/usuario.png'
 
-function ValidarIniciosUsuariosAdmin() {
-  const [mostrar, setMostrarpag] = useState('inicio');
 
-  const mostrarAdmin = () => {
-    setMostrarpag('admin');
+
+function ValidarIniciosUsuariosAdmin() {
+
+  const [Mostrar, SetMostrarpag] = useState('inicio');
+
+  const MostrarAdmin = () => {
+    SetMostrarpag('admin');
   };
 
-  const mostrarUsuarios = () => {
-    setMostrarpag('inicio');
+  const MostrarUsuarios = () => {
+    SetMostrarpag('inicio');
   };
 
   return (
@@ -58,16 +61,15 @@ function ValidarIniciosUsuariosAdmin() {
       </nav>
 
       <div>
-        {mostrar === 'admin' && <SesionAdmin />}
-        {mostrar === 'inicio' && <Inicio />}
+        {Mostrar === 'admin' && <SesionAdmin/>}
+        {Mostrar === 'inicio' && <Inicio />}
       </div>
 
       <div id='botonesUserYAdmin'>
-        <h1>Que eres?</h1>
       <img id='img' src={Corona} alt="img" />
-      <button id='boton1' onClick={mostrarAdmin}>Administrador</button>
       <img id='img' src={user} alt="img" />
-      <button id='boton1' onClick={mostrarUsuarios}>Usuario</button>
+      <button id='boton1' onClick={MostrarAdmin}>Administrador</button>
+      <button id='boton2' onClick={MostrarUsuarios}>Usuario</button>
       </div>
     </>
   );

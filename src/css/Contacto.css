@@ -1,0 +1,157 @@
+#fondo{
+    background-image: url("../img/fondos4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    
+}
+#ContinerDecontactos{
+display: flex;
+justify-content: center;
+flex-direction: row;
+margin-top: 10%;
+gap: 50px;
+}
+
+
+
+#CuadroDeContacto{
+    width: 220px;
+    height: 270px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    
+}
+#ImgCon{
+    margin-top: 30px;
+}
+/*----------------SEGUNDO CONTEINER---------------------*/
+#SegundoConteinerDeContacto{
+    height: 400px;
+    width: 1000px;
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 150px;
+    
+}
+
+/*PRIMER CONTEINER*/
+#conteinerDeConsultas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 30px;
+    
+    
+}
+
+#InputDeContacto{
+    border: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 450px;
+    height: 55px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+#InputDeContacto::placeholder{
+    padding-left: 20px;
+    color: rgb(161, 159, 159);
+}
+
+
+#InputDeContacto3{
+    border: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 450px;
+    height: 180px;
+    padding-bottom: 50px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+#InputDeContacto3::placeholder{
+    padding-left: 20px;
+    padding-top: -100px;
+    color: rgb(161, 159, 159);
+
+
+}
+
+
+#TextirosDecontacto1{ 
+margin-left: -410px;
+position: absolute;
+margin-top: -30px;
+color: white;
+}
+
+#TextirosDecontacto2{ 
+   margin-left: -410px;
+   margin-top: 55px;
+   position: absolute;
+   color: white;
+}
+
+#TextirosDecontacto3{ 
+    position: absolute;
+    margin-left: -395px;
+    margin-top: 155px;
+    color: white;
+}
+
+#BotonDeContacto{
+background-color: #f75e25;
+width: 450px;
+height: 200px;
+border-radius: 20px;
+color: white;
+}
+
+/*SEGUNDO CONTEINER*/
+
+#ConteinerDeInformacio{
+    display: flex;
+    flex-direction: column;
+    width: 800px; 
+    height: 360px; 
+    gap: 30px;
+    
+}
+
+#Titulo{
+    color: white;
+    font-size: 50px;
+}
+
+#SegundoTex{
+    color: white;
+}
+
+#TercerTex{
+    color: rgb(133, 131, 131);
+}
+
+#ImgMinis{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
