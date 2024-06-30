@@ -2,7 +2,9 @@ import { useState } from "react";
 import BotonDeInicio from "../services/boton"; 
 import { useNavigate } from "react-router-dom";
 import { GETdata } from "../services/ApiDeUsers";
-
+import user from '../img/usuario2.png'
+import candado from '../img/candado.png'
+import '../css/Inicio.css'
 const Inicio = () => {
   const [inpunUser, setUser] = useState('');
   const [inpuntPass, setPasswor] = useState('');
@@ -38,28 +40,24 @@ const Inicio = () => {
   };
 
   return (
-    <>
+    <div id="FonodoDeIniciarsesion">
     
 
       <div id="conteiner">
       <h1 id='titulo2'>USUARIO</h1>
-        <input 
-          type="text" 
-          id="InputDeUsers" 
-          value={inpunUser} 
-          placeholder="Ingrese su usuario" 
-          onChange={Inputname} 
-        /><br />
-        <input 
-          type="password" 
-          id="contra" 
-          value={inpuntPass} 
-          placeholder="Ingrese su contraseña" 
-          onChange={InputPassword} 
-        /><br />
+      <div id="input-Iniciar">
+        <input  type="text"  id="InputDeUsers"  value={inpunUser}  placeholder="Ingrese su usuario"  onChange={Inputname}/>
+        <img src={user} alt="Imagen"/>
+        </div><br />
+
+        <div id="input-Iniciar2">
+        <input type="password" id="contra" value={inpuntPass}  placeholder="Ingrese su contraseña" onChange={InputPassword} />
+        <img src={candado} alt="Imagen"/>
+        </div><br />
+       
         <BotonDeInicio onClick={autite} />
       </div>
-    </>
+    </div>
   );
 };
 

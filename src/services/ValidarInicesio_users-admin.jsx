@@ -6,6 +6,7 @@ import Corona from '../img/corona.png'
 import user from  '../img/usuario.png'
 
 
+
 function ValidarIniciosUsuariosAdmin() {
 
   const [Mostrar, SetMostrarpag] = useState('inicio');
@@ -65,11 +66,10 @@ function ValidarIniciosUsuariosAdmin() {
       </div>
 
       <div id='botonesUserYAdmin'>
-        <h1>Que eres?</h1>
       <img id='img' src={Corona} alt="img" />
-      <button id='boton1' onClick={MostrarAdmin}>Administrador</button>
       <img id='img' src={user} alt="img" />
-      <button id='boton1' onClick={MostrarUsuarios}>Usuario</button>
+      <button id='boton1' onClick={MostrarAdmin}>Administrador</button>
+      <button id='boton2' onClick={MostrarUsuarios}>Usuario</button>
       </div>
     </>
   );

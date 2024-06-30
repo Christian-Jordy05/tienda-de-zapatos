@@ -1,9 +1,16 @@
 #fondo{
-    background-image: url("../img/fondo.jpg");
+    background-image: url("../img/fondos4.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
     
 }
 #ContinerDecontactos{
@@ -12,14 +19,13 @@ justify-content: center;
 flex-direction: row;
 margin-top: 10%;
 gap: 50px;
-
 }
 
 
 
 #CuadroDeContacto{
-    width: 275px;
-    height: 300px;
+    width: 220px;
+    height: 270px;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -50,6 +56,9 @@ gap: 50px;
     align-items: center;
     flex-direction: column;
     gap: 70px;
+    margin-top: 30px;
+    
+    
 }
 
 #InputDeContacto{
@@ -91,13 +100,13 @@ gap: 50px;
 #TextirosDecontacto1{ 
 margin-left: -410px;
 position: absolute;
-margin-top: -20px;
+margin-top: -30px;
 color: white;
 }
 
 #TextirosDecontacto2{ 
    margin-left: -410px;
-   margin-top: 70px;
+   margin-top: 55px;
    position: absolute;
    color: white;
 }
@@ -105,14 +114,14 @@ color: white;
 #TextirosDecontacto3{ 
     position: absolute;
     margin-left: -395px;
-    margin-top: 170px;
+    margin-top: 155px;
     color: white;
 }
 
 #BotonDeContacto{
-background-color: rgb(255, 77, 0);
+background-color: #f75e25;
 width: 450px;
-height: 70px;
+height: 200px;
 border-radius: 20px;
 color: white;
 }
@@ -121,11 +130,11 @@ color: white;
 
 #ConteinerDeInformacio{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 900px;
+    width: 800px; 
+    height: 360px; 
     gap: 30px;
-   
+    
 }
 
 #Titulo{
@@ -142,5 +151,7 @@ color: white;
 }
 
 #ImgMinis{
-
+display: flex;
+flex-direction: row;
+gap: 20px;
 }
