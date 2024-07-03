@@ -27,10 +27,11 @@ function SesionAdmin() {
          ApiAdmi.forEach(e => {
           if (Admingmail === e.email && AdminPass === e.contraseña) {
             usuarioEncontrado = true;
+            localStorage.setItem('Admin', e.email); 
           }
         });
         if (usuarioEncontrado) {
-          navigate("/administrar")
+          navigate("/Home")
         }else{
           alert("no eres un admin")
         }

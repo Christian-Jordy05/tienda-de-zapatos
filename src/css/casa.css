@@ -1,4 +1,10 @@
 /*----------------------------- CSS DE LOS BOTONES REGIS Y INICIAR SESION---------------------------  */
+#FondoDecasa{
+  background-color: #1e213d;
+  background-size: cover;
+  position: absolute;
+}
+
 .button-container-1 {
   position: relative;
   width: 100px;
@@ -194,4 +200,26 @@
 #fecha{
   font-size: 25px;
 
+}
+
+
+/* 
+CSS DE LA PAG PRODUCTOS */
+
+#TitulosParaLosProductos{
+  margin-top: 20%;
+  margin-left: 40%;
+  color: white;
+  font-size: 28px;
+}
+
+#titulos-para-los-productos{
+  margin-left: 39%;
+  font-size: 30px;
+  width: 310px;
+  color: white;
+}
+
+#prueba{
+  margin-top: 16%;
 }
