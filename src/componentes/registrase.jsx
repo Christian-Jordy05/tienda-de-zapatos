@@ -1,7 +1,11 @@
 import { useState } from "react"
+import '../css/Registrarse.css'
 import {  Link,useNavigate} from "react-router-dom";
-
+import user from '../img/usuario2.png'
+import gmail from '../img/Correo-img-input.png'
+import candado from '../img/candado.png'
 import PostData from "../services/ApiDeUsers";
+
 
 const Registrase = () => {
   const navigate = useNavigate();
@@ -37,7 +41,7 @@ const Registrase = () => {
 
    
   return (
-<>
+<div id="FonodoDeRegistrarse">
       {/* EL NAV */}
       <nav id="conteinerNav">
         <div id="botones">
@@ -79,17 +83,32 @@ const Registrase = () => {
       </nav>
     
     <div id="conteinerRegis">  
-    <h1>REGISTRARSE</h1><br />
-  
-      <input id="inputUser" type="text" onChange={input1} value={inpunUser} placeholder="ingrese usuario" /><br />
+    <h1 id="TituloDeRegis">REGISTRARSE</h1><br />
 
-      <input id="inputgmail" type="text" onChange={input2} value={inputGmail} placeholder="ingrese correo" /><br />
+    {/* PRIMER INPUT */}
+    <div id="input-Regis">
+    <input id="inputUser" type="text" onChange={input1} value={inpunUser} placeholder="ingrese usuario" /><br />
+    <img src={user} alt="Imagen"/>
+    </div>
+     
+     {/* SEGUNDO INPUT */}
+     <div id="input-Regis2">
+     <input id="inputgmail" type="text" onChange={input2} value={inputGmail} placeholder="ingrese correo" /><br />
+     <img src={gmail} alt="Imagen"/>
+     </div>
 
-      <input id="inputPass" type="text" onChange={input3} value={inpuntPass} placeholder="contraseña" /><br />
+     {/* TERCER INPUT */}
+     <div id="input-Regis3">
+     <input id="inputPass" type="text" onChange={input3} value={inpuntPass} placeholder="contraseña" /><br /><br /><br />
+     <img src={candado} alt="Imagen"/>
+
+     </div>
+
+     
       <button id="BotonRegis" onClick={regis}>registrase</button>
       
     </div>
-  </>
+  </ div>
   )
 }
 

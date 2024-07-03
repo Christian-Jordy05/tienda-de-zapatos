@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     overflow: auto;
+    font-family: 'Lato', sans-serif;
     
 }
 #ContinerDecontactos{
@@ -19,6 +20,8 @@ justify-content: center;
 flex-direction: row;
 margin-top: 10%;
 gap: 50px;
+color: white;
+
 }
 
 
@@ -26,7 +29,7 @@ gap: 50px;
 #CuadroDeContacto{
     width: 220px;
     height: 270px;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -41,7 +44,7 @@ gap: 50px;
 /*----------------SEGUNDO CONTEINER---------------------*/
 #SegundoConteinerDeContacto{
     height: 400px;
-    width: 1000px;
+    width: 1100px;
     gap: 100px;
     display: flex;
     flex-direction: row;
@@ -69,10 +72,10 @@ gap: 50px;
     outline: none;
     background-color: transparent;
     color: white;
+    padding-left: 20px;
 }
 
 #InputDeContacto::placeholder{
-    padding-left: 20px;
     color: rgb(161, 159, 159);
 }
 
@@ -86,10 +89,11 @@ gap: 50px;
     outline: none;
     background-color: transparent;
     color: white;
+    padding-left: 20px;
 }
 
 #InputDeContacto3::placeholder{
-    padding-left: 20px;
+
     padding-top: -100px;
     color: rgb(161, 159, 159);
 

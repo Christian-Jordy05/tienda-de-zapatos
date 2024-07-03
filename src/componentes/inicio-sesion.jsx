@@ -5,6 +5,7 @@ import { GETdata } from "../services/ApiDeUsers";
 import user from '../img/usuario2.png'
 import candado from '../img/candado.png'
 import '../css/Inicio.css'
+
 const Inicio = () => {
   const [inpunUser, setUser] = useState('');
   const [inpuntPass, setPasswor] = useState('');
@@ -28,7 +29,7 @@ const Inicio = () => {
     api.forEach(e => {
       if (inpunUser === e.usuario && inpuntPass === e.contraseña) {
         usuarioEncontrado = true;
-        localStorage.setItem('userID', e.id); 
+        localStorage.setItem('user', e.usuario); 
       }
     });
     if (usuarioEncontrado) {

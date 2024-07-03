@@ -13,13 +13,26 @@
       "contraseña": "124"
     }
   ],
-  "admin" :[
+  "admin": [
     {
-      "id" : "63gsi",
+      "id": "63gsi",
       "usuario": "jordy",
       "email": "yordymar224@gmail.com",
       "contraseña": "jordy1234"
     }
+  ],
+  "Producto": [
+    {
+      "id": "17ec",
+      "image": "ss",
+      "marca": "ssssss",
+      "precio": "sssssssss"
+    },
+    {
+      "id": "e594",
+      "image": "https://img.freepik.com/foto-gratis/zapatillas-lona-blancas-calzado-unisex-moda_53876-101519.jpg?t=st=1719973387~exp=1719976987~hmac=9c9c16e7c253d9cd1940a66d956794142edc705fbb9143448a05974648b6468f&w=900",
+      "marca": "Adidas",
+      "precio": "1200$"
+    }
   ]
-  
 }
