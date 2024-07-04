@@ -4,7 +4,7 @@ export  let  GETAdmin = async () => {
       const data = await response.json();
       return data;
     } catch (error) {
-      console.error('Error fetching the API:', error);
+      // console.error('Error fetching the API:', error);
       return null;
     }
   }

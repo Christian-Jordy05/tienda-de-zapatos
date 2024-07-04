@@ -1,13 +1,7 @@
 {
   "users": [
     {
-      "id": "9e43",
-      "usuario": "jordy",
-      "email": "yordy@ello",
-      "contraseña": "1234"
-    },
-    {
-      "id": "5852",
+      "id": "ad28",
       "usuario": "jordy",
       "email": "MAMA@ello",
       "contraseña": "124"
@@ -23,16 +17,15 @@
   ],
   "Producto": [
     {
-      "id": "17ec",
-      "image": "ss",
-      "marca": "ssssss",
-      "precio": "sssssssss"
+      "id": "00ad",
+      "image": "https://img.freepik.com/foto-gratis/zapatillas-lona-blancas-calzado-unisex-moda_53876-106038.jpg?t=st=1720075820~exp=1720079420~hmac=47fbd11e4372715eb5ab700113aa2a22491c132da07a6802056c42f5659395cc&w=900",
+      "marca": "adiddas",
+      "precio": "ddd"
     },
     {
-      "id": "e594",
-      "image": "https://img.freepik.com/foto-gratis/zapatillas-lona-blancas-calzado-unisex-moda_53876-101519.jpg?t=st=1719973387~exp=1719976987~hmac=9c9c16e7c253d9cd1940a66d956794142edc705fbb9143448a05974648b6468f&w=900",
-      "marca": "Adidas",
-      "precio": "1200$"
+      "marca": "ardidas",
+      "precio": "$200",
+      "id": "b687"
     }
   ]
 }

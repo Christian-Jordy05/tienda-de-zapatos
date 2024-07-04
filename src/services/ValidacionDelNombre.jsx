@@ -7,7 +7,7 @@ function ValidacionDelNombre({ setIsLogin }) {
  
   const Admin = `BIENVENIDO ADMINISTRADOR ${localStorage.getItem('Admin')}`;
   const user = `BIENVENIDO  ${localStorage.getItem('user')}`;
-
+  
   useEffect(() => {
     const user = localStorage.getItem('user');
     const Admin = localStorage.getItem('Admin');
