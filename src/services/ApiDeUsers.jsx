@@ -17,7 +17,7 @@ let PostData = async (inputusers,Inputpassword, Inputgmil) => {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     }
   }
 
@@ -35,7 +35,7 @@ let PostData = async (inputusers,Inputpassword, Inputgmil) => {
       const data = await response.json();
       return data;
     } catch (error) {
-      console.error('Error fetching the API:', error);
+      // console.error('Error fetching the API:', error);
       return null;
     }
   }

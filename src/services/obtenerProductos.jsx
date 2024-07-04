@@ -1,28 +1,27 @@
 import { useEffect } from 'react';
 import { GETProducto } from '../services/apiDeProductos';
 import Card from 'react-bootstrap/Card';
-import "../css/Productos.css"
+import "../css/Productos.css";
 import LongMenu from "../services/listaHambuerza";
 
-function MostrarProductos({ productos, setProductos }) {
-    
+function MostrarProductos({ productos, setProductos, /*login*/ }) {
     useEffect(() => {
         const obtenerProductos = async () => {
             const productosData = await GETProducto();
-            console.log(productosData);
             setProductos(productosData);
         };
         obtenerProductos();
     }, [setProductos]);
 
     return (
-        <>
         <div id="product-container">
             {productos.map((producto, index) => (
                 <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
                     <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                         <p id='texto-del-producto'>Nuevo</p>
-                        <LongMenu />
+                        {/* {login && ( */}
+                            <LongMenu id={producto.id} productos={productos} setProductos={setProductos} />
+                        {/* )} */}
                     </div>
                     <Card.Img variant="top" src={producto.image} />
                     <Card.Body id='cuerpo'>
@@ -34,8 +33,13 @@ function MostrarProductos({ productos, setProductos }) {
                 </Card>
             ))}
         </div>
-        </>
     );
 }
 
 export default MostrarProductos;
+
+
+
+
+
+

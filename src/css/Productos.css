@@ -49,9 +49,7 @@
     border: transparent;
     height: 300px;
 }
-input[type="file"] {
-    display: none;
-}
+
 
 .custom-file-upload {
     border: 1px solid #ccc;
@@ -67,4 +65,22 @@ input[type="file"] {
     display: flex;
     flex-direction: row;
     gap: 140px;
+}
+
+
+/*-------------FUNCIONALIDAD--------------------*/
+#pro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -6px;
+}
+
+#Boton-borra-producto{
+    width: 70px;
+    background-color: red;
+}
+
+#Boton-editar-producto{
+    width: 70px;
 }

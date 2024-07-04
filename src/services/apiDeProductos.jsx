@@ -1,9 +1,9 @@
 // GuardarProducto.js
-const API_URL2 = 'http://localhost:3001/Producto';
+
 
 const GuardarProducto = async (nuevoProducto) => {
     try {
-        const response = await fetch(API_URL2, {
+        const response = await fetch('http://localhost:3001/Producto', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -27,12 +27,11 @@ const GuardarProducto = async (nuevoProducto) => {
 export default GuardarProducto;
 
 
-// GETProducto.js
-const API_URL = 'http://localhost:3001/Producto';
+
 
 export const GETProducto = async () => {
     try {
-        const response = await fetch(API_URL);
+        const response = await fetch('http://localhost:3001/Producto');
         if (!response.ok) {
             throw new Error('Error en la solicitud');
         }
@@ -44,3 +43,41 @@ export const GETProducto = async () => {
         throw error;
     }
 };
+
+
+export const BorrarProductos = async (ID) => {
+    console.log(ID);
+    try {
+        const response = await fetch(`http://localhost:3001/Producto/${ID}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error); 
+    }
+}
+
+
+export const ActalizarProducto = async (id, inputMarca, inputPrecio) => {
+    try {
+        const response = await fetch(`http://localhost:3001/Producto/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                marca:inputMarca,
+                precio: inputPrecio
+            })
+        });
+
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
