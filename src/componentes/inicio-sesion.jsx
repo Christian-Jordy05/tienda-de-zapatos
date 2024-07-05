@@ -9,7 +9,7 @@ import '../css/Inicio.css'
 const Inicio = () => {
   const [inpunUser, setUser] = useState('');
   const [inpuntPass, setPasswor] = useState('');
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const Inputname = (event) => {
     setUser(event.target.value);

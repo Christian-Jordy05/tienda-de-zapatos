@@ -27,7 +27,7 @@ function SesionAdmin() {
          ApiAdmi.forEach(e => {
           if (Admingmail === e.email && AdminPass === e.contraseña) {
             usuarioEncontrado = true;
-            localStorage.setItem('Admin', e.email); 
+            localStorage.setItem('Admin', e.usuario); 
           }
         });
         if (usuarioEncontrado) {

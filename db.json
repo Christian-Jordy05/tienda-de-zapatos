@@ -17,15 +17,16 @@
   ],
   "Producto": [
     {
-      "id": "00ad",
-      "image": "https://img.freepik.com/foto-gratis/zapatillas-lona-blancas-calzado-unisex-moda_53876-106038.jpg?t=st=1720075820~exp=1720079420~hmac=47fbd11e4372715eb5ab700113aa2a22491c132da07a6802056c42f5659395cc&w=900",
-      "marca": "adiddas",
-      "precio": "ddd"
+      "id": "31c4",
+      "image": "https://img.freepik.com/fotos-premium/zapatillas-verano-color-rosa-claro-sobre-fondo-blanco_140241-2268.jpg?w=360",
+      "marca": "nike",
+      "precio": "$120"
     },
     {
-      "marca": "ardidas",
-      "precio": "$200",
-      "id": "b687"
+      "id": "1359",
+      "image": "https://img.freepik.com/psd-premium/zapatillas-blancas-vista-lateral-png-psd-aislado-transparente_915071-105558.jpg?w=740",
+      "marca": "gucci",
+      "precio": "300"
     }
   ]
 }

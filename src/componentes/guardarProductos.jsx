@@ -2,13 +2,18 @@ import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import '../css/Productos.css';
 import GuardarProducto from '../services/apiDeProductos';
+import Box from '@mui/material/Box';
+import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
+import { TreeItem } from '@mui/x-tree-view/TreeItem';
+
+
 
 function ProductosGuardar({ productos, setProductos }) {
     const [imagenSeleccionada, setInputDeImg] = useState('');
     const [isLogin, Login] = useState(false);
     const [NombreDelProducto, setNombreDelProducto] = useState('');
     const [PrecioDelProducto, setPrecioDelProducto] = useState('');
-    
+
     useEffect(() => {
         const user = localStorage.getItem('Admin');
         if (user) {
@@ -42,27 +47,53 @@ function ProductosGuardar({ productos, setProductos }) {
     return (
         <>
             {isLogin && (
-                <div id='ConteinerGuardar'>
-                    <input
-                        type="text"
-                        placeholder="URL de la imagen"
-                        value={imagenSeleccionada}
-                        onChange={agregarImg}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Nombre del producto"
-                        value={NombreDelProducto}
-                        onChange={(e) => setNombreDelProducto(e.target.value)}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Precio del producto"
-                        value={PrecioDelProducto}
-                        onChange={(e) => setPrecioDelProducto(e.target.value)}
-                    />
-                    <Button onClick={agregarProducto}>Agregar Producto</Button>
-                </div>
+                <Box sx={{ minHeight: 352, minWidth: 250 }}>
+                    <SimpleTreeView>
+                        <Box sx={{ minHeight: 352, minWidth: 250 }}>
+                            <SimpleTreeView>
+
+                                {/* PADRE DE TODO  */}
+                                <TreeItem itemId="grid" style={{ color : "black" , TreeItem}} className='lista-del-admin' label="admistracion">
+
+                                    {/* AGREGAR PRODUCTO */}
+                                    <TreeItem itemId='grid-community' label="agregar Productos">
+
+                                        <div id='ConteinerGuardar' >
+                                            <input
+                                                type="text"
+                                                id='input1'
+                                                placeholder="URL de la imagen"
+                                                value={imagenSeleccionada}
+                                                onChange={agregarImg}
+                                            />
+                                          
+                                            <input
+                                                type="text"
+                                                placeholder="Nombre del producto"
+                                                value={NombreDelProducto}
+                                                onChange={(e) => setNombreDelProducto(e.target.value)}
+                                            />
+                                            
+                                            <input
+                                                type="text"
+                                                placeholder="Precio del producto"
+                                                value={PrecioDelProducto}
+                                                onChange={(e) => setPrecioDelProducto(e.target.value)}
+                                            />
+                                           
+                                            <Button onClick={agregarProducto}>Agregar Producto</Button>
+                                        </div>
+                                    </TreeItem>
+
+                                    {/* LOS MENSAJES DE LOS USUARIOS */}
+                                    <TreeItem itemId="pickers" label="Mensajes de los usuarios">
+                                        <h1>en espera</h1>
+                                    </TreeItem>
+                                </TreeItem>
+                            </SimpleTreeView>
+                        </Box>
+                    </SimpleTreeView>
+                </Box>
             )}
         </>
     );

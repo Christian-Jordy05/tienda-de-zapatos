@@ -62,16 +62,17 @@ export const BorrarProductos = async (ID) => {
 }
 
 
-export const ActalizarProducto = async (id, inputMarca, inputPrecio) => {
+export const ActalizarProducto = async (ID,imagen, inputMarca, inputPrecio) => {
     try {
-        const response = await fetch(`http://localhost:3001/Producto/${id}`, {
+        const response = await fetch(`http://localhost:3001/Producto/${ID}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                marca:inputMarca,
-                precio: inputPrecio
+                image: imagen,
+                marca:inputMarca, 
+                precio: inputPrecio 
             })
         });
 

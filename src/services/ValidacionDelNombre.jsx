@@ -4,10 +4,12 @@ import BotonDeInicio from './boton';
 
 function ValidacionDelNombre({ setIsLogin }) {
   const [Login, setLogin] = useState(false);
- 
-  const Admin = `BIENVENIDO ADMINISTRADOR ${localStorage.getItem('Admin')}`;
-  const user = `BIENVENIDO  ${localStorage.getItem('user')}`;
-  
+
+
+  const admin = localStorage.getItem('Admin');
+  const user = localStorage.getItem('user');
+  const mensaje = admin ?  <p>BIENVENIDO ADMINISTRADOR {admin}</p> : <p>BIENVENIDO {user}</p>
+
   useEffect(() => {
     const user = localStorage.getItem('user');
     const Admin = localStorage.getItem('Admin');
@@ -44,8 +46,14 @@ function ValidacionDelNombre({ setIsLogin }) {
       )}
       {Login && (
         <div>
-          <p>{user || Admin}</p>
-          <button onClick={cerrarSesion}>cerrar sesión</button>
+          <p id='TextoDeBienvenido'>{mensaje}</p>
+          <div id="conteinerDebtn_CerrarSesion">
+          <div className="button-container-1">
+            <span className="mas">TOCA</span>
+              <button id='work' type="button" onClick={cerrarSesion} name="Hover">Cerrar sesion</button>
+          </div>
+          </div>
+          
           <div style={{ display: 'none' }}>
             <BotonDeInicio />
           </div>
@@ -56,3 +64,5 @@ function ValidacionDelNombre({ setIsLogin }) {
 }
 
 export default ValidacionDelNombre;
+
+
