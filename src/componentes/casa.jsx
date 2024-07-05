@@ -29,6 +29,10 @@ function Home() {
             </Link>
           </div>
         </div>
+        <div id="div-de-lista-de-admin">
+        {isLogin && <ProductosGuardar productos={productos} setProductos={setProductos} />}
+        </div>
+        
       </nav>
       <div id='white'></div>
       <div className="contenedor">
@@ -38,7 +42,7 @@ function Home() {
       </div>
       <br />
       <div id="prueba">
-        {isLogin && <ProductosGuardar productos={productos} setProductos={setProductos} />}
+       
       </div>
 
       <p id="titulos-para-los-productos">NUESTRO PRODUCTOS</p>

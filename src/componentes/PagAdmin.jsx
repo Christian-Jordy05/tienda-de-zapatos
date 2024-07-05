@@ -1,12 +1,11 @@
 
 
-function PagAdmin() {
+export default function FirstComponent() {
 
+ 
   return (
-    <div>
-      <h1>solo admnin</h1>
-    </div>
-  )
+<h1>hss</h1>
+  );
 }
 
-export default PagAdmin
+

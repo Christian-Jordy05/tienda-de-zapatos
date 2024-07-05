@@ -8,12 +8,12 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const LongMenu = ({ id, setProductos, productos }) => {
+const LongMenu = ({ id, setProductos, productos,image,precio,Marca }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const [show, setShow] = useState(false);
-  const [inputMarca, setMarca] = useState('');
-  const [inputPrecio, setPrecio] = useState('');
+  const [inputMarca, setMarca] = useState(Marca);
+  const [inputPrecio, setPrecio] = useState(precio);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -52,11 +52,11 @@ const LongMenu = ({ id, setProductos, productos }) => {
     if (inputMarca === "" || inputPrecio === "") {
       console.log("Espacios vacíos");
     } else {
-      await ActalizarProducto(id, inputMarca, inputPrecio);
-      console.log("Producto actualizado");
+        await ActalizarProducto(id,image, inputMarca, inputPrecio);
       const productosActualizados = productos.map((producto) => {
         if (producto.id === id) {
-          return { ...producto, marca: inputMarca, precio: inputPrecio };
+          
+          return { ...producto,  marca: inputMarca, precio: inputPrecio };
         } else {
           return producto;
         }
@@ -65,6 +65,8 @@ const LongMenu = ({ id, setProductos, productos }) => {
       handleCloseModal();
     }
   };
+
+
 
   return (
     <>
@@ -95,7 +97,7 @@ const LongMenu = ({ id, setProductos, productos }) => {
           }}
         >
           <MenuItem>
-            <div id='pro'>
+            <div id='separacionDeLosBotones'>
               <button id="Boton-borra-producto" onClick={borrarProducto}>Eliminar</button>
               <button id="Boton-editar-producto" onClick={handleShowModal}>Editar</button>
             </div>
@@ -108,8 +110,9 @@ const LongMenu = ({ id, setProductos, productos }) => {
           </Modal.Header>
           <Modal.Body>
             <div className="form-group">
-              <input type="text" value={inputMarca} onChange={handleChangeMarca} placeholder="Marca" />
-              <input type="text" value={inputPrecio} onChange={handleChangePrecio} placeholder="Precio" />
+              <input type="text" id='inputb' value={inputMarca} onChange={handleChangeMarca} placeholder="Marca" />
+              <input type="text"  value={inputPrecio} onChange={handleChangePrecio} placeholder="Precio" />
+              {name}
               {/* <button onClick={editarProducto}>Guardar</button> */}
             </div>
           </Modal.Body>

@@ -14,8 +14,6 @@
 }
 
 
-
-
 #texto-del-producto{
     padding: 5px;
     background-color: rgb(149, 135, 135);
@@ -59,7 +57,10 @@
 }
 
 #ConteinerGuardar{
-    margin-top: 15%;
+   display: grid;
+   grid-template-columns: 350px;
+   grid-template-rows: repeat(3,50px) 40px;
+   gap: 5px;
 }
 #Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar{
     display: flex;
@@ -68,8 +69,8 @@
 }
 
 
-/*-------------FUNCIONALIDAD--------------------*/
-#pro{
+/*-------------CSS  DE EL MENU--------------------*/
+#separacionDeLosBotones{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -79,8 +80,14 @@
 #Boton-borra-producto{
     width: 70px;
     background-color: red;
+    border-radius: 10px;
 }
 
 #Boton-editar-producto{
     width: 70px;
+    border-radius: 10px;
+}
+
+#input1{
+   opacity: 1;
 }

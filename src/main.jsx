@@ -4,6 +4,8 @@ import App from './router/App.jsx'
 import'./css/pagError.css'
 import './css/casa.css'
 import './css/Contacto.css'
+
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';

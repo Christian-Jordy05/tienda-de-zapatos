@@ -20,7 +20,7 @@ function MostrarProductos({ productos, setProductos, /*login*/ }) {
                     <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                         <p id='texto-del-producto'>Nuevo</p>
                         {/* {login && ( */}
-                            <LongMenu id={producto.id} productos={productos} setProductos={setProductos} />
+                            <LongMenu id={producto.id} productos={productos} image={producto.image} precio={producto.precio} Marca={producto.marca} setProductos={setProductos} />
                         {/* )} */}
                     </div>
                     <Card.Img variant="top" src={producto.image} />
