@@ -29,6 +29,34 @@ export default GuardarProducto;
 
 
 
+export const GuardarProductoDeInicio = async (nuevoProducto) => {
+    try {
+        const response = await fetch('http://localhost:3001/Producto', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(nuevoProducto)
+        });
+
+        if (!response.ok) {
+            throw new Error('Error al guardar el producto');
+        }
+
+        const data = await response.json();
+        console.log('Producto guardado:', data);
+        return data;
+    } catch (error) {
+        console.error('Error al guardar el producto:', error);
+        throw error;
+    }
+};
+
+
+
+
+
+
 export const GETProducto = async () => {
     try {
         const response = await fetch('http://localhost:3001/Producto');

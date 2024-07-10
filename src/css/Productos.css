@@ -5,7 +5,7 @@
 #product-container{
    display: grid;
    grid-template-rows: repeat(4,1fr);;
-   grid-template-columns: repeat(4,0.1fr);
+   grid-template-columns: repeat(4,1fr);
     margin-top: 200px;
     gap: 30px;
     width: auto;
@@ -14,7 +14,9 @@
     margin-top: 4%;
     
 }
+/* CSS DE LOS CARD DE LOS PRODUCTOS */
 
+/* NIKE */
 #cuerpo2{
     display: flex;
     align-items: center;
@@ -34,19 +36,43 @@
 }
 
 
+#nombre-del-productonNike{
+    font-size: 4px;
+    color: black;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-top:2px;
+   
+}
+#precio-del-productoNike{
+    font-size: 20px;
+    color: black;
+    margin-top: -5px;
+    
+}
+
+/* LOS DEMAS */
+
 #nombre-del-producto{
     font-size: 4px;
     color: black;
     font-size: 30px;
     display: flex;
     align-items: center;
+    margin-top:7px;
    
 }
 #precio-del-producto{
     font-size: 20px;
     color: black;
+    margin-top: -8px;
+    
 }
 
+
+
+/* ----------------------------------------------- */
 #Cuerpo{
     background-color: #3C3F5F;
     border: transparent;
@@ -64,15 +90,12 @@
 
 #ConteinerGuardar{
    display: grid;
-   grid-template-columns: 200px 200px;
+   grid-template-columns: 220px;
    gap: 10px;
    height: auto;
    
 
-   /* grid-template-columns: 160px;
-   grid-template-rows: repeat(4,50px) ;
-   gap: 5px; */
-   
+
 }
 #Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar{
     display: flex;
