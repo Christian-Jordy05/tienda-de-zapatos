@@ -42,8 +42,6 @@ const Inicio = () => {
 
   return (
     <div id="FonodoDeIniciarsesion">
-    
-
       <div id="conteiner">
       <h1 id='titulo2'>USUARIO</h1>
       <div id="input-Iniciar">

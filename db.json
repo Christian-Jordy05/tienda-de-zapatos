@@ -5,6 +5,12 @@
       "usuario": "jordy",
       "email": "MAMA@ello",
       "contraseña": "124"
+    },
+    {
+      "id": "3575",
+      "usuario": "yacith",
+      "email": "MAMA@ello",
+      "contraseña": "1234"
     }
   ],
   "admin": [
@@ -17,16 +23,25 @@
   ],
   "Producto": [
     {
-      "id": "31c4",
-      "image": "https://img.freepik.com/fotos-premium/zapatillas-verano-color-rosa-claro-sobre-fondo-blanco_140241-2268.jpg?w=360",
-      "marca": "nike",
-      "precio": "$120"
+      "id": "e0e9",
+      "image": "https://reebok.bynder.com/transform/e5fd21dd-8fed-4017-9bf6-7edcddf4d8b5/100206743_SLC_eCom-tif?io=transform:fit,width:400&quality=100",
+      "marca": "Reebok",
+      "precio": "$136",
+      "categorias": "Reebok"
     },
     {
-      "id": "1359",
-      "image": "https://img.freepik.com/psd-premium/zapatillas-blancas-vista-lateral-png-psd-aislado-transparente_915071-105558.jpg?w=740",
-      "marca": "gucci",
-      "precio": "300"
+      "id": "33c6",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af6bbdfea9214acca9a3ab3800c54d30_9366/Tenis_Bravada_Blanco_FV8086_01_standard.jpg",
+      "marca": "adidas",
+      "precio": "$263",
+      "categorias": "Adidas"
+    },
+    {
+      "id": "9487",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/310475/01/sv01/fnd/PNA/fmt/png/Tenis-de-running-Mujer-Deviate-NITRO%E2%84%A2-3",
+      "marca": "Puma",
+      "precio": "$154",
+      "categorias": "Puma"
     }
   ]
 }

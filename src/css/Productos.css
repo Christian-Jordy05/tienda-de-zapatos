@@ -8,17 +8,24 @@
    grid-template-columns: repeat(4,0.1fr);
     margin-top: 200px;
     gap: 30px;
-    width: 1200px;
+    width: auto;
+    height: auto;
     margin-left: 10px;
     margin-top: 4%;
+    
 }
 
-
+#cuerpo2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -19%;
+}
 #texto-del-producto{
     padding: 5px;
-    background-color: rgb(149, 135, 135);
+    background-color: rgba(149, 135, 135, 0.801);
     width: 80px;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 10px;
    text-align: center;
    color: white;
@@ -29,7 +36,6 @@
 
 #nombre-del-producto{
     font-size: 4px;
-    margin-left: 70px;
     color: black;
     font-size: 30px;
     display: flex;
@@ -38,7 +44,6 @@
 }
 #precio-del-producto{
     font-size: 20px;
-    margin-left: 89px;
     color: black;
 }
 
@@ -54,13 +59,20 @@
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
+    
 }
 
 #ConteinerGuardar{
    display: grid;
-   grid-template-columns: 350px;
-   grid-template-rows: repeat(3,50px) 40px;
-   gap: 5px;
+   grid-template-columns: 200px 200px;
+   gap: 10px;
+   height: auto;
+   
+
+   /* grid-template-columns: 160px;
+   grid-template-rows: repeat(4,50px) ;
+   gap: 5px; */
+   
 }
 #Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar{
     display: flex;
@@ -79,8 +91,8 @@
 
 #Boton-borra-producto{
     width: 70px;
-    background-color: red;
     border-radius: 10px;
+    background-color: red;
 }
 
 #Boton-editar-producto{
@@ -91,3 +103,7 @@
 #input1{
    opacity: 1;
 }
+
+
+
+

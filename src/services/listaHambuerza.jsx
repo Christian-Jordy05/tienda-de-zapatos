@@ -2,15 +2,16 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { BorrarProductos } from './apiDeProductos';
-import { ActalizarProducto } from './apiDeProductos';
+import { BorrarProductos, ActalizarProducto } from './apiDeProductos';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import "../css/paginaDeLosProductos.css"
 
-const LongMenu = ({ id, setProductos, productos,image,precio,Marca }) => {
+const LongMenu = ({ id, setProductos, productos, image, precio, Marca, categoria }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+
   const [show, setShow] = useState(false);
   const [inputMarca, setMarca] = useState(Marca);
   const [inputPrecio, setPrecio] = useState(precio);
@@ -52,10 +53,9 @@ const LongMenu = ({ id, setProductos, productos,image,precio,Marca }) => {
     if (inputMarca === "" || inputPrecio === "") {
       console.log("Espacios vacíos");
     } else {
-        await ActalizarProducto(id,image, inputMarca, inputPrecio);
+        await ActalizarProducto(id,image, inputMarca, inputPrecio,categoria);
       const productosActualizados = productos.map((producto) => {
         if (producto.id === id) {
-          
           return { ...producto,  marca: inputMarca, precio: inputPrecio };
         } else {
           return producto;
