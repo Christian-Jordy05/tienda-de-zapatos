@@ -14,14 +14,13 @@
     margin-top: 4%;
     
 }
-/* CSS DE LOS CARD DE LOS PRODUCTOS */
+/* CSS DE LOS CARD DE LOS PRODUCTOSDeInicio */
 
-/* NIKE */
 #cuerpo2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -19%;
+    margin-top: -10%;
 }
 #texto-del-producto{
     padding: 5px;

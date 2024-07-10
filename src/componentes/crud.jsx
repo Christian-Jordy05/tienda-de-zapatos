@@ -23,8 +23,8 @@ function PagDeproductos() {
   const [botonAdidas, setAdidasBoton] = useState(false);
   const [buscador, setBuscador] = useState('');
 
-
-
+  const [isLogin, Login] = useState(false);
+  
  
 
 
@@ -92,7 +92,22 @@ function PagDeproductos() {
 
   useEffect(() => {
     fetchProductos();
+    
   }, [productos]);
+
+
+
+
+
+  useEffect(() => {
+    const user = localStorage.getItem('Admin');
+    if (user) {
+        Login(true);
+    }
+}, []);
+
+
+
 
   return (
     <div id="fondoDeLosProductos">
@@ -138,6 +153,7 @@ function PagDeproductos() {
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                 {/* <p id='texto-del-producto'>Nuevo</p> */}
+                {isLogin && (
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -146,6 +162,7 @@ function PagDeproductos() {
                   Marca={producto.marca}
                   categoria={producto.categorias}
                 />
+              )}
               </div>
               <Card.Img variant="top" src={producto.image} />
               <Card.Body id='cuerpoTodos'>
@@ -165,6 +182,7 @@ function PagDeproductos() {
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                 {/* <p id='texto-del-producto'>Nuevo</p> */}
+                {isLogin && (
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -173,6 +191,7 @@ function PagDeproductos() {
                   Marca={producto.marca}
                   categoria={producto.categorias}
                 />
+              )}
               </div>
               <Card.Img variant="top" src={producto.image} />
               <Card.Body id='cuerpoNike'>
@@ -192,6 +211,7 @@ function PagDeproductos() {
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                 {/* <p id='texto-del-producto'>Nuevo</p> */}
+                {isLogin && (
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -200,6 +220,7 @@ function PagDeproductos() {
                   Marca={producto.marca}
                   categoria={producto.categorias}
                 />
+              )}
               </div>
               <Card.Img variant="top" src={producto.image} />
               <Card.Body id='cuerpoReebok'>
@@ -219,6 +240,7 @@ function PagDeproductos() {
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                 {/* <p id='texto-del-producto'>Nuevo</p> */}
+                {isLogin && (
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -227,6 +249,7 @@ function PagDeproductos() {
                   Marca={producto.marca}
                   categoria={producto.categorias}
                 />
+              )}
               </div>
               <Card.Img variant="top" src={producto.image} />
               <Card.Body id='cuerpoPuma'>
@@ -246,6 +269,7 @@ function PagDeproductos() {
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                 {/* <p id='texto-del-producto'>Nuevo</p> */}
+                {isLogin && (
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -254,6 +278,7 @@ function PagDeproductos() {
                   Marca={producto.marca}
                   categoria={producto.categorias}
                 />
+              )}
               </div>
               <Card.Img variant="top" src={producto.image} />
               <Card.Body id='cuerpoAdidas'>

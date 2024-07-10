@@ -7,6 +7,9 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "../css/paginaDeLosProductos.css"
+import { BorrarProductosDeInicio,ActalizarProductoDeInici } from './ApiDeproductosDeInicio';
+
+
 
 const LongMenu = ({ id, setProductos, productos, image, precio, Marca, categoria }) => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -44,8 +47,10 @@ const LongMenu = ({ id, setProductos, productos, image, precio, Marca, categoria
 
   const borrarProducto = async () => {
     await BorrarProductos(id);
+    await BorrarProductosDeInicio(id)
     const updatedProductos = productos.filter((producto) => producto.id !== id);
-    setProductos(updatedProductos);
+    const updatedProductosDeInicio = productos.filter((producto) => producto.id !== id);
+    setProductos(updatedProductos,updatedProductosDeInicio);
     handleCloseMenu();
   };
 
@@ -53,7 +58,8 @@ const LongMenu = ({ id, setProductos, productos, image, precio, Marca, categoria
     if (inputMarca === "" || inputPrecio === "") {
       console.log("Espacios vacíos");
     } else {
-        await ActalizarProducto(id,image, inputMarca, inputPrecio,categoria);
+      await ActalizarProductoDeInici(id,image, inputMarca, inputPrecio,categoria);
+      await ActalizarProducto(id,image, inputMarca, inputPrecio,categoria);
       const productosActualizados = productos.map((producto) => {
         if (producto.id === id) {
           return { ...producto,  marca: inputMarca, precio: inputPrecio };

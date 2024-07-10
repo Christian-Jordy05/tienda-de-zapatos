@@ -21,7 +21,7 @@
       "contraseña": "jordy1234"
     }
   ],
-  
+  "productosDeInicio": [],
   "Producto": [
     {
       "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c2182a695faa4ded844cada8004a55b7_9366/Tenis_adidas_Court_Low_Streetcheck_Cloudfoam_Blanco_GW5488_01_standard.jpg",
@@ -211,6 +211,90 @@
       "precio": "$65",
       "categorias": "Nike",
       "id": "616e"
+    },
+    {
+      "id": "2662",
+      "image": "https://img.freepik.com/foto-gratis/nuevo-par-zapatillas-blancas-aislado-blanco_93675-135053.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720483200&semt=ais_user",
+      "marca": "adidas",
+      "precio": "$350",
+      "categorias": "Adidas"
+    },
+    {
+      "id": "910a",
+      "image": "cuerpo2cuerpo2",
+      "marca": "ss",
+      "precio": "f",
+      "categorias": ""
+    },
+    {
+      "id": "889e",
+      "image": "er",
+      "marca": "rrr",
+      "precio": "tt",
+      "categorias": ""
+    },
+    {
+      "id": "2c75",
+      "image": "33",
+      "marca": "33333",
+      "precio": "333333",
+      "categorias": ""
+    },
+    {
+      "id": "48b8",
+      "image": "w",
+      "marca": "ww",
+      "precio": "w",
+      "categorias": ""
+    },
+    {
+      "id": "da84",
+      "image": "w",
+      "marca": "www",
+      "precio": "www",
+      "categorias": ""
+    },
+    {
+      "id": "6afb",
+      "image": "w",
+      "marca": "w",
+      "precio": "w",
+      "categorias": ""
+    },
+    {
+      "id": "7ca1",
+      "image": "d",
+      "marca": "dd",
+      "precio": "dd",
+      "categorias": ""
+    },
+    {
+      "id": "7ff1",
+      "image": "ss",
+      "marca": "s",
+      "precio": "s",
+      "categorias": ""
+    },
+    {
+      "id": "949c",
+      "image": "sdd",
+      "marca": "dd",
+      "precio": "dd",
+      "categorias": ""
+    },
+    {
+      "id": "15a6",
+      "image": "ss",
+      "marca": "sss",
+      "precio": "ss",
+      "categorias": ""
+    },
+    {
+      "id": "67ab",
+      "image": "ee",
+      "marca": "e",
+      "precio": "e",
+      "categorias": ""
     }
   ]
 }

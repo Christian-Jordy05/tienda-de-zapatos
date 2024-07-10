@@ -1,29 +1,31 @@
 import { useEffect, useState } from 'react';
-import { GETProducto } from '../services/apiDeProductos';
+import { GETProductoDeInicio } from './ApiDeproductosDeInicio';
 import Card from 'react-bootstrap/Card';
 import "../css/Productos.css";
 import LongMenu from "../services/listaHambuerza";
 
 function MostrarProductos({ productos, setProductos }) {
-  const [admin,setAdmin] = useState(false)
+    const [admin, setAdmin] = useState(false);
 
     useEffect(() => {
         const obtenerProductos = async () => {
-            const productosData = await GETProducto();
+            const productosData = await GETProductoDeInicio();
             setProductos(productosData);
         };
         obtenerProductos();
+    }, [setProductos]);
+    
+    useEffect(() => {
         const user = localStorage.getItem('Admin');
         if (user) {
             setAdmin(true);
         }
-    }, [setProductos,]);
+    }, []);
 
-   
     return (
         <div id="product-container">
-            {productos.map((producto, index) => (
-                <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
+            {productos.map((producto) => (
+                <Card id='cuerpo' style={{ width: '18rem' }} key={producto.id}>
                     <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
                         <p id='texto-del-producto'>Nuevo</p>
                         {admin && (

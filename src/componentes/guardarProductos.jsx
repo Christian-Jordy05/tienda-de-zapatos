@@ -5,7 +5,7 @@ import GuardarProducto from '../services/apiDeProductos';
 import Box from '@mui/material/Box';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
-
+import GuardarProductoDeInicio from '../services/ApiDeproductosDeInicio';
 
 
 
@@ -44,8 +44,16 @@ function ProductosGuardar({ productos, setProductos }) {
                 categorias: categoria
             };
 
+            const nuevoProductoDeInicio = {
+                image: imagenSeleccionada,
+                marca: NombreDelProducto,
+                precio: PrecioDelProducto,
+                categorias: categoria
+            };
+
+            await GuardarProductoDeInicio(nuevoProductoDeInicio)
             await GuardarProducto(nuevoProducto);
-            setProductos([...productos, nuevoProducto]);
+            setProductos([...productos,nuevoProducto,nuevoProductoDeInicio]);
             setInputDeImg('');
             setNombreDelProducto('');
             setPrecioDelProducto('');
