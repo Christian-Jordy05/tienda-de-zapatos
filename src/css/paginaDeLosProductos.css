@@ -1,0 +1,173 @@
+#fondoDeLosProductos{
+    background-color: #1e213d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+
+
+
+
+/* CSS DEL NAV Y LOS BOTONES DE LAS CATEGORIA */
+
+#BtnDeCategoria{
+  display: grid;
+  grid-template-rows: 20px 20px;
+  grid-template-columns: 150px 150px 150px 150px;
+    gap: 40px;
+    margin-top: 40%;
+    margin-bottom: 10%;
+    margin-left: 22%;
+}
+
+#BtnNike, #BtnReebok, #BtnPuma, #BtnAdidas{
+    font-size: 50px;
+    border: transparent;
+    margin-top: 20%;
+    background-color: transparent;
+    position: relative;
+    color: white;
+}
+
+#BtnNike::after, #BtnReebok::after, #BtnPuma::after, #BtnAdidas::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-out;
+}
+
+#BtnNike:hover::after, #BtnReebok:hover::after, #BtnPuma:hover::after, #BtnAdidas:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* INPUT DE BUSQUEDA DE LOS PRODUCTOS */
+#InputDeBusqueda{
+    margin-top: 5%;
+    margin-left: 38%;
+    width: 250px;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: white solid 2px;
+    outline: none;
+    color: white;
+}
+#InputDeBusqueda::placeholder{
+    color: white;
+    font-size: 20px;
+}
+
+  
+
+/* #colorDetexto {
+    color: transparent;
+    background-image: linear-gradient(to left, #000000, white, white, rgb(77, 69, 69), #000000);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;    
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+/* CSS DE TODOS LOS PRODUCTOS */
+
+#ConteinerDeTodosLosProductos{
+    margin-top: 8%;
+}
+#DivNike,#DivReebok,#DivPuma,#DivAdidas,#divTodasLastenis{
+   display: grid;
+   grid-template-columns: repeat(4,280px);
+   grid-template-rows: repeat(4,450px);
+   gap: 35px;
+   justify-content: center;
+   margin-left: -20px;
+    
+}
+#cuerpoNike{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -30%;
+}
+#cuerpoReebok{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20%;
+   
+}
+#cuerpoPuma{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20%;
+   
+}
+
+#cuerpoAdidas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20%;
+   
+}
+
+#cuerpo{
+    max-height: 380px;
+    -webkit-box-shadow: 0px 0px 33px 7px rgba(255,255,255,0.73);
+    -moz-box-shadow: 0px 0px 33px 7px rgba(255,255,255,0.73);
+    box-shadow: 0px 0px 33px 7px rgba(255,255,255,0.73);
+}
+
+
+#divTodasLastenis{
+    display: grid;
+    grid-template-columns: repeat(4,280px);
+    grid-template-rows: repeat(4,450px);
+    gap: 35px;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+#cuerpoTodos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -30%;
+}
+
+#long-button{
+    position: absolute;
+}
+
+
+#imgLogos{
+    height: 120px;
+    margin-left: 30px;
+    margin-top: 20px;
+}

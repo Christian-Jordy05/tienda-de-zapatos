@@ -49,7 +49,7 @@
 
 .mas {
   position: absolute;
-  color: black;
+  color: white;
   text-align: center;
   width: 101%;
   font-family: 'Lato', sans-serif;
@@ -132,8 +132,10 @@
   margin-top: -100px;
   color: black;
   font-family: Arial, sans-serif;
-  background-color: rgba(255, 255, 255, 0.315);
+  background-color: rgba(255, 255, 255, 0.493);
+  position: relative;
 }
+
 
 #div-de-lista-de-admin{
 margin-top: -20px;
@@ -245,9 +247,10 @@ CSS DE LA PAG PRODUCTOS */
 }
 
 #titulos-para-los-productos{
-  margin-left: 39%;
+  margin-left: 36%;
   font-size: 30px;
-  width: 310px;
+  margin-top: 10%;
+  width: 440px;
   color: white;
 }
 
@@ -256,7 +259,14 @@ CSS DE LA PAG PRODUCTOS */
 }
 
 
+/* CSS DEL QUE LOS LLEVA A TODOS LOS PRODUCTOS */
+#TituloDelTextoDeLink{
+  color: white;
+}
 
-
-
-
+#LinKParaLosProductos{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border-bottom: blue solid 2px;
+}

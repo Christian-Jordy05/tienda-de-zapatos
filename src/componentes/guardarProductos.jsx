@@ -8,11 +8,20 @@ import { TreeItem } from '@mui/x-tree-view/TreeItem';
 
 
 
+
 function ProductosGuardar({ productos, setProductos }) {
     const [imagenSeleccionada, setInputDeImg] = useState('');
     const [isLogin, Login] = useState(false);
     const [NombreDelProducto, setNombreDelProducto] = useState('');
     const [PrecioDelProducto, setPrecioDelProducto] = useState('');
+    const [nike,setNike] = useState('Nike');
+    const [adidas,setAdidas] = useState('Adidas');
+    const [reebok,setReebok] = useState('Reebok');
+    const [puma,setPuma] = useState('Puma');
+    const [categoria,setCategoria] = useState("")
+
+   
+   
 
     useEffect(() => {
         const user = localStorage.getItem('Admin');
@@ -31,7 +40,8 @@ function ProductosGuardar({ productos, setProductos }) {
             const nuevoProducto = {
                 image: imagenSeleccionada,
                 marca: NombreDelProducto,
-                precio: PrecioDelProducto
+                precio: PrecioDelProducto,
+                categorias: categoria
             };
 
             await GuardarProducto(nuevoProducto);
@@ -40,16 +50,17 @@ function ProductosGuardar({ productos, setProductos }) {
             setNombreDelProducto('');
             setPrecioDelProducto('');
         } else {
-            alert("Completa todos los campos e imagen");
+            alert("Completa todo puto");
         }
     }
 
     return (
         <>
+        
             {isLogin && (
-                <Box sx={{ minHeight: 352, minWidth: 250 }}>
+                <Box  sx={{ minHeight: 1, minWidth: 250 }}>
                     <SimpleTreeView>
-                        <Box sx={{ minHeight: 352, minWidth: 250 }}>
+                        <Box sx={{ minHeight: 1, minWidth: 250 }}>
                             <SimpleTreeView>
 
                                 {/* PADRE DE TODO  */}
@@ -80,14 +91,21 @@ function ProductosGuardar({ productos, setProductos }) {
                                                 value={PrecioDelProducto}
                                                 onChange={(e) => setPrecioDelProducto(e.target.value)}
                                             />
-                                           
+                                            <select value={categoria} id=""  onChange={(e) => setCategoria(e.target.value)} >
+                                                <option value="">Categoria</option>
+                                                <option value={nike}>Nike</option>
+                                                <option value={adidas}>Adidas</option>
+                                                <option value={reebok}>Reebok</option>
+                                                <option value={puma}>Puma</option>
+                                            </select>
+
                                             <Button onClick={agregarProducto}>Agregar Producto</Button>
                                         </div>
                                     </TreeItem>
 
                                     {/* LOS MENSAJES DE LOS USUARIOS */}
-                                    <TreeItem itemId="pickers" label="Mensajes de los usuarios">
-                                        <h1>en espera</h1>
+                                    <TreeItem  itemId="pickers" label="Mensajes de los usuarios">
+                                        <h1 id='Nose'>en espera</h1>
                                     </TreeItem>
                                 </TreeItem>
                             </SimpleTreeView>
@@ -95,6 +113,7 @@ function ProductosGuardar({ productos, setProductos }) {
                     </SimpleTreeView>
                 </Box>
             )}
+        
         </>
     );
 }
