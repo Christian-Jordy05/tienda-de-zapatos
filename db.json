@@ -21,27 +21,196 @@
       "contraseña": "jordy1234"
     }
   ],
+  
   "Producto": [
     {
-      "id": "e0e9",
-      "image": "https://reebok.bynder.com/transform/e5fd21dd-8fed-4017-9bf6-7edcddf4d8b5/100206743_SLC_eCom-tif?io=transform:fit,width:400&quality=100",
-      "marca": "Reebok",
-      "precio": "$136",
-      "categorias": "Reebok"
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c2182a695faa4ded844cada8004a55b7_9366/Tenis_adidas_Court_Low_Streetcheck_Cloudfoam_Blanco_GW5488_01_standard.jpg",
+      "marca": "FOR2 ADIDAS ",
+      "precio": "$200",
+      "categorias": "Adidas",
+      "id": "43d3"
     },
     {
-      "id": "33c6",
-      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af6bbdfea9214acca9a3ab3800c54d30_9366/Tenis_Bravada_Blanco_FV8086_01_standard.jpg",
-      "marca": "adidas",
-      "precio": "$263",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/25b80b1e986f4fac93d88dcebd29dc5c_9366/Tenis_adidas_Grand_Court_TD_Lifestyle_Court_Casual_Blanco_ID3023_01_standard.jpg",
+      "marca": "ADIDAS GRAND",
+      "precio": "$1,090",
+      "categorias": "Adidas",
+      "id": "6d74"
+    },
+    {
+      "id": "3ff1",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/a16aacd2a80b4897bda6ad67f987b8dd_9366/Tenis_Samba_XLG_Blanco_IE1377_01_standard.jpg",
+      "marca": "TENIS SAMBA XLG",
+      "precio": "$2,999",
       "categorias": "Adidas"
     },
     {
-      "id": "9487",
-      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/310475/01/sv01/fnd/PNA/fmt/png/Tenis-de-running-Mujer-Deviate-NITRO%E2%84%A2-3",
-      "marca": "Puma",
-      "precio": "$154",
+      "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/97cea44143a74842a9e71e69aee45b14_9366/Tenis_Park_Street_Blanco_ID5582_01_standard.jpg",
+      "marca": "TENIS  STREET",
+      "precio": "$1,023",
+      "categorias": "Adidas",
+      "id": "c5be"
+    },
+    {
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/1822e1180d644baca09724689c16721f_9366/Tenis_Forum_Low_CL_Blanco_IG3777_01_standard.jpg",
+      "marca": "TENIS FORUM ",
+      "precio": "$1,655",
+      "categorias": "Adidas",
+      "id": "4297"
+    },
+    {
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/323b7d9b4770477f84e1bcff3df08204_9366/Tenis_adidas_Grand_Court_2.0_Negro_ID2963_01_standard.jpg",
+      "marca": "ADIDAS COURT2.0",
+      "precio": "$950",
+      "categorias": "Adidas",
+      "id": "1033"
+    },
+    {
+      "id": "f77a",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/95da6589a7c846cd83b3977a33276bdc_9366/Tenis_Lite_Racer_3_Violeta_ID3398_01_standard.jpg",
+      "marca": "LITE RACER 3",
+      "precio": "$639",
+      "categorias": "Adidas"
+    },
+    {
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/612f5c689a324d6bba0cadc500ff31b4_9366/Tenis_adidas_Court_Low_Streetcheck_Cloudfoam_Negro_GW5489_01_standard.jpg",
+      "marca": "LOW STREET",
+      "precio": "$1,002",
+      "categorias": "Adidas",
+      "id": "dd51"
+    },
+    {
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/16ebbdbd9a2b41c7a1b094c3375f1596_9366/Tenis_de_Running_Alphabounce_Sustainable_Bounce_Blanco_IG3585_01_standard.jpg",
+      "marca": " ALPHABOUNCE23",
+      "precio": "$1,083",
+      "categorias": "Adidas",
+      "id": "8aa8"
+    },
+    {
+      "id": "eeff",
+      "image": "https://reebok.bynder.com/transform/544ad8ea-0676-4d89-98fe-2d6e5b3839d4/100206739_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "FloatZig",
+      "precio": "$204",
+      "categorias": "Reebok"
+    },
+    {
+      "id": "8f73",
+      "image": "https://reebok.bynder.com/transform/cf58cfd9-9557-4921-a735-cd2e7993030b/100204815_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "Nano Court ",
+      "precio": "$120",
+      "categorias": "Reebok"
+    },
+    {
+      "id": "992e",
+      "image": "https://reebok.bynder.com/transform/c05303f3-d022-4fba-b383-2310225a665f/100211632_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "Nano X4 Training",
+      "precio": "$150",
+      "categorias": "Reebok"
+    },
+    {
+      "id": "156c",
+      "image": "https://reebok.bynder.com/transform/35d8d453-1be2-4b34-96a4-25b910bf4930/100204813_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "Training Shoes",
+      "precio": "$120",
+      "categorias": "Reebok"
+    },
+    {
+      "image": "https://reebok.bynder.com/transform/0424d5a0-7e62-4675-b00b-f59ea7aee1b2/100208514_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "Nano 2.0 Shoes",
+      "precio": "$120",
+      "categorias": "Reebok",
+      "id": "ea16"
+    },
+    {
+      "image": "https://reebok.bynder.com/transform/f06ae675-da48-42e5-a06c-3d2628fa2555/100204674_SLC_eCom-tif?io=transform:fit,width:1000&quality=100",
+      "marca": "X4 Training Shoes",
+      "precio": "$120",
+      "categorias": "Reebok",
+      "id": "80d9"
+    },
+    {
+      "id": "b6bf",
+      "image": "https://reebok.bynder.com/transform/f2f975b2-42ce-4dfb-b4a5-194b2028b973/100204811_SLC_eCom-tif?io=transform:fit,width:1000&quality=100",
+      "marca": "Training Shoes",
+      "precio": "$120",
+      "categorias": "Reebok"
+    },
+    {
+      "image": "https://reebok.bynder.com/transform/0af0387b-1247-4ae1-9644-a390e1c6f898/100218255_SLC_eCom-tif?io=transform:fit,width:1000&quality=100",
+      "marca": "Zig Dynamica",
+      "precio": "$75",
+      "categorias": "Reebok",
+      "id": "523f"
+    },
+    {
+      "id": "662b",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/310474/01/sv01/fnd/PNA/fmt/png/Tenis-de-running-Hombre-Deviate-NITRO%E2%84%A2-3",
+      "marca": "Deviate NITRO™ 3",
+      "precio": "$160",
       "categorias": "Puma"
+    },
+    {
+      "id": "ad64",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0083d873-114c-4a76-9dd3-82aa3c1b168f/tenis-air-max-dn-zPC01x.png",
+      "marca": "Nike Air Max Dn",
+      "precio": "$160",
+      "categorias": "Nike"
+    },
+    {
+      "id": "f351",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a447e0eb-b47c-464b-91df-5387f958582d/tenis-dunk-low-ppQwKZ.png",
+      "marca": "Nike Dunk Low",
+      "precio": "$115",
+      "categorias": "Nike"
+    },
+    {
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb32986e-71e0-4b2d-addc-da59ddac1268/calzado-court-vision-alta-TbljXk.png",
+      "marca": "Nike Vision Alta",
+      "precio": "$54,87",
+      "categorias": "Nike",
+      "id": "b437"
+    },
+    {
+      "id": "3a9d",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/56aeefa7-d327-4b78-b4bc-e86c7637465b/tenis-grandes-dunk-low-l6Jxh2.png",
+      "marca": "Nike Dunk Low",
+      "precio": "$74,97",
+      "categorias": "Nike"
+    },
+    {
+      "id": "e058",
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d0370114-298a-474f-b4e3-4126943e1d30/calzado-air-max-90-Bd2qnn.png",
+      "marca": "Nike Air Max 90",
+      "precio": "$89.97",
+      "categorias": "Nike"
+    },
+    {
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7dcc6fd4-b41c-493e-85bd-58b8944b6b1d/tenis-blazer-mid-77-NPWfjm.png",
+      "marca": "Nike Blazer Mid ",
+      "precio": "$105",
+      "categorias": "Nike",
+      "id": "90ac"
+    },
+    {
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d752b32-17e8-40bc-ac1a-7a8849957a12/tenis-air-force-1-07-PqdxJw.png",
+      "marca": "Nike Air Force",
+      "precio": "$69.97",
+      "categorias": "Nike",
+      "id": "e105"
+    },
+    {
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/692cff1b-1c52-4799-9460-1876a2eb59e0/tenis-de-entrenamiento-free-metcon-6-T7WdM6.png",
+      "marca": "Nike Metcon 6",
+      "precio": "$120",
+      "categorias": "Nike",
+      "id": "f593"
+    },
+    {
+      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/887201c5-9376-495a-a5e6-cb973c978699/calzado-de-entrenamiento-legend-essential-2-premium-pvvmXq.png",
+      "marca": "Legend Premium",
+      "precio": "$65",
+      "categorias": "Nike",
+      "id": "616e"
     }
   ]
 }

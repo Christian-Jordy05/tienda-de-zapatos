@@ -58,9 +58,9 @@ function ProductosGuardar({ productos, setProductos }) {
         <>
         
             {isLogin && (
-                <Box  sx={{ minHeight: 1, minWidth: 250 }}>
+                <Box   sx={{ minHeight: 1, minWidth: 150 }}>
                     <SimpleTreeView>
-                        <Box sx={{ minHeight: 1, minWidth: 250 }}>
+                        <Box sx={{ minHeight: 1, minWidth: 150 }}>
                             <SimpleTreeView>
 
                                 {/* PADRE DE TODO  */}

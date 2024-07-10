@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ValidacionDelNombre from "../services/ValidacionDelNombre";
 import ProductosGuardar from "../componentes/guardarProductos";
+import "../css/casa.css"
 
 function NavbarDetodasLaspag() {
     const [productos, setProductos] = useState([]);

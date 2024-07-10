@@ -4,8 +4,10 @@ import Card from 'react-bootstrap/Card';
 import LongMenu from "../services/listaHambuerza";
 import "../css/paginaDeLosProductos.css"
 import NavbarDetodasLaspag from "./navbarDetodasLaspag";
-import Reebokimg from "../img/reebok.svg"
-import NikeImg from "../img/nike.svg"
+import Reebokimg from "../img/reebok.png"
+import NikeImg from "../img/nike.png"
+import Pumaimg from "../img/puma.png"
+import AdidasImg from "../img/adidas.png"
 
 
 function PagDeproductos() {
@@ -101,6 +103,10 @@ function PagDeproductos() {
       </nav>
       {/* LOS BOTONES DE LA CATEGOIA */}
       <div id="BtnDeCategoria">
+      <img id="imgNike" src={NikeImg} alt="" />
+      <img id="imgReebok" src={Reebokimg} alt="" />
+       <img id="imgPuma" src={Pumaimg} alt="" />
+       <img id="imgAdidas" src={AdidasImg} alt="" />
 
 
         <button id="BtnNike" data-animation="center" onClick={nike}><span id="colorDetexto">Nike</span></button>
@@ -108,12 +114,6 @@ function PagDeproductos() {
         <button id="BtnPuma" onClick={Puma}>Puma</button>
         <button id="BtnAdidas" onClick={adidas}>Adidas</button>
         {/* <button onClick={todosl}>todos</button> */}
-
-
-       <img id="imgLogos" src={Reebokimg} alt="" />
-       <img id="imgLogos" src={NikeImg} alt="" />
-       <img id="imgLogos" src={Reebokimg} alt="" />
-       <img id="imgLogos" src={Reebokimg} alt="" />
       </div>
 
 
@@ -137,7 +137,7 @@ function PagDeproductos() {
           {filtrarNombre.map((producto, index) => (
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
-                <p id='texto-del-producto'>Nuevo</p>
+                {/* <p id='texto-del-producto'>Nuevo</p> */}
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -164,7 +164,7 @@ function PagDeproductos() {
           {productoNike.map((producto, index) => (
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
-                <p id='texto-del-producto'>Nuevo</p>
+                {/* <p id='texto-del-producto'>Nuevo</p> */}
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -176,8 +176,8 @@ function PagDeproductos() {
               </div>
               <Card.Img variant="top" src={producto.image} />
               <Card.Body id='cuerpoNike'>
-                <Card.Title id='nombre-del-producto'>{producto.marca}</Card.Title>
-                <Card.Text id='precio-del-producto'>
+                <Card.Title id='nombre-del-productonNike'>{producto.marca}</Card.Title>
+                <Card.Text id='precio-del-productoNike'>
                   {producto.precio}
                 </Card.Text>
               </Card.Body>
@@ -191,7 +191,7 @@ function PagDeproductos() {
           {productoReebok.map((producto, index) => (
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
-                <p id='texto-del-producto'>Nuevo</p>
+                {/* <p id='texto-del-producto'>Nuevo</p> */}
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -218,7 +218,7 @@ function PagDeproductos() {
           {productoPuma.map((producto, index) => (
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
-                <p id='texto-del-producto'>Nuevo</p>
+                {/* <p id='texto-del-producto'>Nuevo</p> */}
                 <LongMenu
                   id={producto.id}
                   productos={productos}
@@ -245,7 +245,7 @@ function PagDeproductos() {
           {productoAdidas.map((producto, index) => (
             <Card id='cuerpo' style={{ width: '18rem' }} key={index}>
               <div id='Conteiner-de-texto-nuevo-y-menu-para-editar-y-borrar'>
-                <p id='texto-del-producto'>Nuevo</p>
+                {/* <p id='texto-del-producto'>Nuevo</p> */}
                 <LongMenu
                   id={producto.id}
                   productos={productos}
