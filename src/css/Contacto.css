@@ -159,3 +159,12 @@ display: flex;
 flex-direction: row;
 gap: 20px;
 }
+
+
+#BotonDeRegresar{
+    margin-top: 8%;
+    margin-left: -470%;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+}

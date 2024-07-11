@@ -133,11 +133,13 @@
   color: black;
   font-family: Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.493);
+  width: 300px;
   position: relative;
 }
 
 
 #div-de-lista-de-admin{
+  margin-left: -85%;
 margin-top: -20px;
 height: 40px;
 opacity: 1;
@@ -167,6 +169,11 @@ opacity: 1;
 #conteinerDebtn_Contacto{
   margin-bottom: 23px;
 }
+#about{
+  margin-left: 190%;
+  margin-top: -30%;
+}
+
 #white{
   width: 100%; 
   height: 80px;
@@ -267,4 +274,44 @@ CSS DE LA PAG PRODUCTOS */
   text-decoration: none;
   color: white;
   border-bottom: blue solid 2px;
+}
+
+
+
+/* css de footer */
+
+#footer{
+  background-color: #1e213d;
+  border-top: black solid 3px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 500px 650px 100px;
+}
+
+#textoDePrimerDiv{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-left: -70%;
+  margin-top: 3%;
+}
+
+#ImgFooter{
+  height: 60px;
+  margin-top: 60%;
+}
+
+
+#tercerDivDeFooter{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  
+ 
+}
+
+
+#textoDeSegundoDiv{
+  color: white;
+  text-align: center;
+  margin-top: 18%;
 }

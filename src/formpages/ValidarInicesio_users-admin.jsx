@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import SesionAdmin from '../componentes/sesionAdmin';
-import Inicio from '../componentes/inicio-sesion';
+import Inicio from './inicio-sesion';
 import { Link } from 'react-router-dom';
 import Corona from '../img/corona.png'
 import user from  '../img/usuario.png'
@@ -8,13 +8,14 @@ import user from  '../img/usuario.png'
 
 
 function ValidarIniciosUsuariosAdmin() {
-
+// VALIDACION PARA MOSTRA DIV DIFERENTE
   const [Mostrar, SetMostrarpag] = useState('inicio');
 
+  // FUNCION PARA MOSTRAR EL DIV DEL ADMIN
   const MostrarAdmin = () => {
     SetMostrarpag('admin');
   };
-
+//FUNCION PARA MOSTAR EL DIV DE USUARIO
   const MostrarUsuarios = () => {
     SetMostrarpag('inicio');
   };
@@ -61,13 +62,18 @@ function ValidarIniciosUsuariosAdmin() {
       </nav>
 
       <div>
+        {/* AQUI MOSTRA PARA CUANDO TOQUE UNO SE OCULTE UNO Y MUESTRE EL OTRO */}
         {Mostrar === 'admin' && <SesionAdmin/>}
         {Mostrar === 'inicio' && <Inicio />}
       </div>
 
+
+      {/* CONTEINER DEL CAMBIO DEL DIV */}
       <div id='botonesUserYAdmin'>
+        {/* IMG DE LOS CAMBIOS DE DIV */}
       <img id='img' src={Corona} alt="img" />
       <img id='img' src={user} alt="img" />
+      {/* LOS BOTONES QUE CAMBIO LOS DIV */}
       <button id='boton1' onClick={MostrarAdmin}>Administrador</button>
       <button id='boton2' onClick={MostrarUsuarios}>Usuario</button>
       </div>

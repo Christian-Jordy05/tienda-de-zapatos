@@ -1,4 +1,4 @@
-import Registrase from "../../componentes/registrase"
+import Registrase from "../../formpages/registrase"
 
 function PagRegistrar() {
   return (

@@ -1,14 +1,11 @@
-// GuardarProducto.js
-
-
-const GuardarProducto = async (nuevoProducto) => {
+ const GuardarProductoDeInicio = async (nuevoProductoDeInicio) => {
     try {
-        const response = await fetch('http://localhost:3001/Producto', {
+        const response = await fetch('http://localhost:3001/productosDeInicio', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(nuevoProducto)
+            body: JSON.stringify(nuevoProductoDeInicio)
         });
 
         if (!response.ok) {
@@ -24,13 +21,14 @@ const GuardarProducto = async (nuevoProducto) => {
     }
 };
 
-export default GuardarProducto;
+export default GuardarProductoDeInicio
 
 
 
-export const GETProducto = async () => {
+
+export const GETProductoDeInicio = async () => {
     try {
-        const response = await fetch('http://localhost:3001/Producto');
+        const response = await fetch('http://localhost:3001/productosDeInicio');
         if (!response.ok) {
             throw new Error('Error en la solicitud');
         }
@@ -44,10 +42,12 @@ export const GETProducto = async () => {
 };
 
 
-export const BorrarProductos = async (ID) => {
+
+
+export const BorrarProductosDeInicio = async (ID) => {
     console.log(ID);
     try {
-        const response = await fetch(`http://localhost:3001/Producto/${ID}`, {
+        const response = await fetch(`http://localhost:3001/productosDeInicio/${ID}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,9 +61,9 @@ export const BorrarProductos = async (ID) => {
 }
 
 
-export const ActalizarProducto = async (id,imagen, inputMarca, inputPrecio,categoria) => {
+export const ActalizarProductoDeInici = async (id,imagen, inputMarca, inputPrecio,categoria) => {
     try {
-        const response = await fetch(`http://localhost:3001/Producto/${id}`, {
+        const response = await fetch(`http://localhost:3001/productosDeInicio/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

@@ -1,0 +1,78 @@
+#fondoDeLaPagDeLosComentarios{
+    background-color: #1e213d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+#conteinerTodoLosComentarios{
+    display: grid;
+    grid-template-columns: 630px 100px;
+    grid-template-rows: 250px 100px;
+    height: auto;
+    width: auto;
+    margin-left: 6%;
+    margin-top: 10%;
+  
+}
+
+#ConteinerDelComentario{
+  margin-top: 20px;
+  width: 500px;
+  height: 200px; 
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+#Conteiner-nombre-fecha{
+    display: grid;
+    grid-template-columns: 255px 140px 130px;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#Correo{
+    margin-left: 15px;
+}
+
+
+
+#ConteinerDeLosMensajes{
+    border-top: #1e213d 7px solid;
+    margin-top: 5%;
+    /* margin-left: 15px; */
+
+    
+     
+}
+#TituloDeMensaje{
+    margin-left: 15px;
+}
+#Mensaje{
+    margin-top: -10px;
+    margin-left: 15px;
+ 
+}
+
+
+#BotonDeBorrar{
+    width: 60px;
+    margin-top: 5%;
+    margin-left: 85%;
+    background-color: red;
+    border: transparent;
+    border-radius: 10px;
+}
+
+#BotonDeRegresar2{
+    margin-top: 3%;
+    margin-left: 3%;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+}

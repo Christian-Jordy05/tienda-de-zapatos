@@ -14,14 +14,21 @@
     margin-top: 4%;
     
 }
-/* CSS DE LOS CARD DE LOS PRODUCTOS */
+/* CSS DE INICIO */
+#cuerpoIni{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20%;
+}
 
-/* NIKE */
+/* CSS DE LOS CARD DE LOS PRODUCTOSDeInicio */
+
 #cuerpo2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -19%;
+    margin-top: -10%;
 }
 #texto-del-producto{
     padding: 5px;
@@ -130,3 +137,10 @@
 
 
 
+/* CSS DEL BOTON DE LOS COMENTARIOS */
+#BotonDeLinkDeComentarios{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}

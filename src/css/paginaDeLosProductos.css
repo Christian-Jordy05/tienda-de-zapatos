@@ -119,22 +119,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -20%;
+    margin-top: -5%;
    
 }
 #cuerpoPuma{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -20%;
-   
+    margin-top: -5%;
+   /* ANTES ESTABAN EN -20% */
 }
 
 #cuerpoAdidas{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: -20%;
+    margin-top: -5%;
    
 }
 
@@ -187,4 +187,16 @@
     height: 160px;
     margin-left: 5px;
     margin-top: 5px;
+}
+
+
+
+
+/* --------------------------------- */
+#BotonDeRegresar{
+    margin-top: 8%;
+    margin-left: 3%;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
 }

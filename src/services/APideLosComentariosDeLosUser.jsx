@@ -1,14 +1,12 @@
-// GuardarProducto.js
 
-
-const GuardarProducto = async (nuevoProducto) => {
+const GuardarComentarios = async (comentario) => {
     try {
-        const response = await fetch('http://localhost:3001/Producto', {
+        const response = await fetch('http://localhost:3001/ComentariosDeLosuser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(nuevoProducto)
+            body: JSON.stringify(comentario)
         });
 
         if (!response.ok) {
@@ -24,13 +22,13 @@ const GuardarProducto = async (nuevoProducto) => {
     }
 };
 
-export default GuardarProducto;
+export default GuardarComentarios
 
 
 
-export const GETProducto = async () => {
+export const GETcomentarios = async () => {
     try {
-        const response = await fetch('http://localhost:3001/Producto');
+        const response = await fetch('http://localhost:3001/ComentariosDeLosuser');
         if (!response.ok) {
             throw new Error('Error en la solicitud');
         }
@@ -44,10 +42,12 @@ export const GETProducto = async () => {
 };
 
 
-export const BorrarProductos = async (ID) => {
+
+
+export const BorrarComentario = async (ID) => {
     console.log(ID);
     try {
-        const response = await fetch(`http://localhost:3001/Producto/${ID}`, {
+        const response = await fetch(`http://localhost:3001/ComentariosDeLosuser/${ID}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,29 +57,5 @@ export const BorrarProductos = async (ID) => {
         console.log(data);
     } catch (error) {
         console.error(error); 
-    }
-}
-
-
-export const ActalizarProducto = async (id,imagen, inputMarca, inputPrecio,categoria) => {
-    try {
-        const response = await fetch(`http://localhost:3001/Producto/${id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                image: imagen,
-                marca:inputMarca, 
-                precio:inputPrecio,
-                categorias: categoria
-
-            })
-        });
-
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.log(error);
     }
 }

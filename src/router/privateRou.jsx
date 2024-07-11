@@ -1,14 +1,15 @@
-// import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
-// const PrivateRoute = ({ children }) => {
-//   const userID = localStorage.getItem('userID');
-  
-//   if () {
-  
-//     return <Navigate to="/error"/>;
-//   }
+const PrivateRoute = ({ children }) => {
+  // VARIABLE QUE GUARDAR EL NOMBRE DEL ADMIN
+  const admin = localStorage.getItem('Admin');
 
-//   return children;
-// };
+  // AQUI HAGO UN IF SI EL ADMIN ES DISTINTO MUESTRE LA PAG DE ERROR PERO SI NO ES DISTINTO ENTONCES QUE LO DEJE PASAR A LA PAG PRIVADA
+  if (!admin) {
+    return <Navigate to="/error"/>;
+  }
 
-// export default PrivateRoute;
+  return children;
+};
+
+export default PrivateRoute;
