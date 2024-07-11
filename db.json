@@ -17,6 +17,12 @@
       "usuario": "jordy",
       "email": "MAMA@ello",
       "contraseña": "1234"
+    },
+    {
+      "id": "0af5",
+      "usuario": "yacith",
+      "email": "yordy@ello",
+      "contraseña": "123"
     }
   ],
   "admin": [
@@ -33,6 +39,13 @@
       "image": "https://reebok.bynder.com/transform/3746aee0-8ded-4cb8-a88d-326964e19b05/100206601_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
       "marca": "FloatZig 1 Shoes",
       "precio": "$120",
+      "categorias": "Reebok"
+    },
+    {
+      "id": "ce0c",
+      "image": "https://reebok.bynder.com/transform/22a2be53-79cb-454d-8618-18f693ff3569/100008491_SLC_eCom-tif?io=transform:fit,width:1000&quality=100",
+      "marca": "Rebook",
+      "precio": "$200",
       "categorias": "Reebok"
     }
   ],
@@ -171,13 +184,6 @@
       "categorias": "Nike"
     },
     {
-      "id": "f351",
-      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a447e0eb-b47c-464b-91df-5387f958582d/tenis-dunk-low-ppQwKZ.png",
-      "marca": "Nike Dunk Low",
-      "precio": "$115",
-      "categorias": "Nike"
-    },
-    {
       "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb32986e-71e0-4b2d-addc-da59ddac1268/calzado-court-vision-alta-TbljXk.png",
       "marca": "Nike Vision Alta",
       "precio": "$54,87",
@@ -200,8 +206,8 @@
     },
     {
       "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7dcc6fd4-b41c-493e-85bd-58b8944b6b1d/tenis-blazer-mid-77-NPWfjm.png",
-      "marca": "Nike Blazer Mid ",
-      "precio": "$105",
+      "marca": "Nike Blazer",
+      "precio": "$200",
       "categorias": "Nike",
       "id": "90ac"
     },
@@ -365,7 +371,23 @@
       "marca": "FloatZig 1 Shoes",
       "precio": "$120",
       "categorias": "Reebok"
+    },
+    {
+      "id": "1238",
+      "image": "https://reebok.bynder.com/transform/22a2be53-79cb-454d-8618-18f693ff3569/100008491_SLC_eCom-tif?io=transform:fit,width:1000&quality=100",
+      "marca": "Rebook",
+      "precio": "$200",
+      "categorias": "Reebok"
     }
   ],
-  "ComentariosDeLosuser": []
+  "ComentariosDeLosuser": [
+    {
+      "id": "a864",
+      "correo": "eff",
+      "Usuario": "fff",
+      "Mensaje": "fffffffff",
+      "fecha": "11/07/2024",
+      "hora": "8:37:1"
+    }
+  ]
 }

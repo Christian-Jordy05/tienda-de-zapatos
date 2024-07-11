@@ -41,8 +41,7 @@ function Contacto() {
     if (InputCorreo.trim() === "" || InputUsuario.trim() === "" || InputMensaje.trim() === "") {
       // si hay espacios en blancos manda este aler
       Swal.fire({
-        title: 'No eres un admin!',
-        text: 'Solo admin puede iniciar sesion aqui',
+        title: 'esta vacio!',
         icon: 'warning'
       });
     } else {

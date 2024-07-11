@@ -30,7 +30,7 @@ function Home() {
       {/* link que dirige a todos los productos */}
       <Link id="LinKParaLosProductos" to={"/Productos"}>PRODUCTOS</Link>
       <p id="titulos-para-los-productos">NUESTRO NUEVOS PRODUCTOS</p>
-      <MostrarProductos  />
+      <MostrarProductos />
       <div id="footer">
 
         <div id="SegundoDivDeFooter">
