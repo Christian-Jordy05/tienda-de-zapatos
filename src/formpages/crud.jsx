@@ -135,7 +135,7 @@ function PagDeproductos() {
         <NavbarDetodasLaspag />
       </nav>
     
-      <Link to={"/home"}><button id="BotonDeRegresar">regresar</button></Link>
+      <Link to={"/home"}><button id="BotonDeRegresar3">regresar</button></Link>
       {/* LOS BOTONES Y IMG DE LAS CATEGOIAS DE CADA PRODUCTOS */}
       <div id="BtnDeCategoria">
         <img id="imgNike" src={NikeImg} alt="" />
