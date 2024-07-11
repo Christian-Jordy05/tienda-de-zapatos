@@ -1,5 +1,5 @@
 
-import Inicio from '../../componentes/inicio-sesion'
+import Inicio from "../../formpages/inicio-sesion"
 
 function Paginicio() {
   return (

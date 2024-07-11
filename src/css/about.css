@@ -1,0 +1,35 @@
+#FondoDeAbout{
+    background-color: #1e213d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+#ConteinerAbout{
+    background-color: white;
+    display: grid;
+    height: 400px;
+    width: 1000px;
+    grid-template-columns: 400px 100px;
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+#AboutImg{
+    height: 400px;
+}
+
+#texto{
+    font-size: 30px;
+}
+
+#BotonDeRegresar2{
+    
+    
+    height: 35px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+}

@@ -1,4 +1,5 @@
-import Home from "../../componentes/casa"
+import Home from "../../formpages/casa"
+
 function PagHome() {
   return (
     <div>

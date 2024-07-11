@@ -1,5 +1,4 @@
-
-import Contacto from '../../componentes/Contacto'
+import Contacto from "../../formpages/Contacto"
 
 function PagContacto() {
   return (

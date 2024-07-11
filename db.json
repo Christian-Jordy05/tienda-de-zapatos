@@ -1,14 +1,20 @@
 {
   "users": [
     {
-      "id": "ad28",
-      "usuario": "jordy",
-      "email": "MAMA@ello",
-      "contraseña": "124"
+      "id": "d078",
+      "usuario": "       ",
+      "email": "    ",
+      "contraseña": "   "
     },
     {
-      "id": "3575",
-      "usuario": "yacith",
+      "id": "f3de",
+      "usuario": "  ",
+      "email": "  ",
+      "contraseña": "  "
+    },
+    {
+      "id": "2fc6",
+      "usuario": "jordy",
       "email": "MAMA@ello",
       "contraseña": "1234"
     }
@@ -21,7 +27,15 @@
       "contraseña": "jordy1234"
     }
   ],
-  "productosDeInicio": [],
+  "productosDeInicio": [
+    {
+      "id": "e270",
+      "image": "https://reebok.bynder.com/transform/3746aee0-8ded-4cb8-a88d-326964e19b05/100206601_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "FloatZig 1 Shoes",
+      "precio": "$120",
+      "categorias": "Reebok"
+    }
+  ],
   "Producto": [
     {
       "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c2182a695faa4ded844cada8004a55b7_9366/Tenis_adidas_Court_Low_Streetcheck_Cloudfoam_Blanco_GW5488_01_standard.jpg",
@@ -101,11 +115,11 @@
       "categorias": "Reebok"
     },
     {
-      "id": "992e",
       "image": "https://reebok.bynder.com/transform/c05303f3-d022-4fba-b383-2310225a665f/100211632_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
       "marca": "Nano X4 Training",
-      "precio": "$150",
-      "categorias": "Reebok"
+      "precio": "$160",
+      "categorias": "Reebok",
+      "id": "992e"
     },
     {
       "id": "156c",
@@ -213,88 +227,145 @@
       "id": "616e"
     },
     {
-      "id": "2662",
-      "image": "https://img.freepik.com/foto-gratis/nuevo-par-zapatillas-blancas-aislado-blanco_93675-135053.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720483200&semt=ais_user",
-      "marca": "adidas",
-      "precio": "$350",
-      "categorias": "Adidas"
+      "id": "01ea",
+      "image": "w",
+      "marca": "ww",
+      "precio": "e",
+      "categorias": ""
     },
     {
-      "id": "910a",
-      "image": "cuerpo2cuerpo2",
-      "marca": "ss",
+      "id": "da0d",
+      "image": "e",
+      "marca": "e",
+      "precio": "e",
+      "categorias": ""
+    },
+    {
+      "id": "0c75",
+      "image": "v",
+      "marca": "v",
+      "precio": "v",
+      "categorias": ""
+    },
+    {
+      "id": "b8af",
+      "image": "ww",
+      "marca": "ww",
+      "precio": "ww",
+      "categorias": ""
+    },
+    {
+      "id": "5b81",
+      "image": "d",
+      "marca": "d",
+      "precio": "ddd",
+      "categorias": ""
+    },
+    {
+      "id": "9188",
+      "image": "f",
+      "marca": "f",
       "precio": "f",
       "categorias": ""
     },
     {
-      "id": "889e",
-      "image": "er",
-      "marca": "rrr",
-      "precio": "tt",
-      "categorias": ""
-    },
-    {
-      "id": "2c75",
-      "image": "33",
-      "marca": "33333",
-      "precio": "333333",
-      "categorias": ""
-    },
-    {
-      "id": "48b8",
-      "image": "w",
-      "marca": "ww",
-      "precio": "w",
-      "categorias": ""
-    },
-    {
-      "id": "da84",
-      "image": "w",
-      "marca": "www",
-      "precio": "www",
-      "categorias": ""
-    },
-    {
-      "id": "6afb",
-      "image": "w",
-      "marca": "w",
-      "precio": "w",
-      "categorias": ""
-    },
-    {
-      "id": "7ca1",
+      "id": "9f8d",
       "image": "d",
-      "marca": "dd",
-      "precio": "dd",
+      "marca": "f",
+      "precio": "f",
       "categorias": ""
     },
     {
-      "id": "7ff1",
-      "image": "ss",
-      "marca": "s",
-      "precio": "s",
+      "id": "36fe",
+      "image": "r",
+      "marca": "r",
+      "precio": "rrrr",
       "categorias": ""
     },
     {
-      "id": "949c",
-      "image": "sdd",
-      "marca": "dd",
-      "precio": "dd",
-      "categorias": ""
-    },
-    {
-      "id": "15a6",
-      "image": "ss",
-      "marca": "sss",
-      "precio": "ss",
-      "categorias": ""
-    },
-    {
-      "id": "67ab",
-      "image": "ee",
+      "id": "1476",
+      "image": "e",
       "marca": "e",
       "precio": "e",
       "categorias": ""
+    },
+    {
+      "id": "9250",
+      "image": "d",
+      "marca": "d",
+      "precio": "d",
+      "categorias": ""
+    },
+    {
+      "id": "9484",
+      "image": "d",
+      "marca": "d",
+      "precio": "d",
+      "categorias": ""
+    },
+    {
+      "id": "e69e",
+      "image": "d",
+      "marca": "d",
+      "precio": "d",
+      "categorias": ""
+    },
+    {
+      "id": "7244",
+      "image": "f",
+      "marca": "f",
+      "precio": "f",
+      "categorias": ""
+    },
+    {
+      "id": "5c67",
+      "image": "v",
+      "marca": "v",
+      "precio": "v",
+      "categorias": ""
+    },
+    {
+      "id": "ab67",
+      "image": "f",
+      "marca": "f",
+      "precio": "ff",
+      "categorias": ""
+    },
+    {
+      "id": "9eb8",
+      "image": "e",
+      "marca": "d",
+      "precio": "e",
+      "categorias": ""
+    },
+    {
+      "id": "2464",
+      "image": "c",
+      "marca": "c",
+      "precio": "ccc",
+      "categorias": ""
+    },
+    {
+      "id": "e1ca",
+      "image": "f",
+      "marca": "f",
+      "precio": "f",
+      "categorias": ""
+    },
+    {
+      "id": "4157",
+      "image": "e",
+      "marca": "e",
+      "precio": "e",
+      "categorias": ""
+    },
+    {
+      "id": "ef32",
+      "image": "https://reebok.bynder.com/transform/3746aee0-8ded-4cb8-a88d-326964e19b05/100206601_SLC_eCom-tif?io=transform:fit,width:350&quality=100",
+      "marca": "FloatZig 1 Shoes",
+      "precio": "$120",
+      "categorias": "Reebok"
     }
-  ]
+  ],
+  "ComentariosDeLosuser": []
 }

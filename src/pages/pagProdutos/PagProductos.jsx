@@ -1,4 +1,4 @@
-import PagDeproductos from "../../componentes/crud"
+import PagDeproductos from "../../formpages/crud"
 
 function PagDeLosProductos() {
   return (

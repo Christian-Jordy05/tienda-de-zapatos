@@ -188,3 +188,15 @@
     margin-left: 5px;
     margin-top: 5px;
 }
+
+
+
+
+/* --------------------------------- */
+#BotonDeRegresar{
+    margin-top: 8%;
+    margin-left: 3%;
+    height: 35px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+}
